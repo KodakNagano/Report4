@@ -3,7 +3,7 @@ package jp.ac.uryukyu.ie.e175717;
 public class Main {
     public static void main (String args[]){
         String  a;
-        a = null;
+        a = "3．14";
         try{
             System.out.println(a.length());
         }
@@ -11,5 +11,8 @@ public class Main {
             System.out.println("NullPointerExceptionが発生");
             System.out.println(e.getMessage());
         }
+
+        double value;
+        value = Double.parseDouble(a);
     }
 }
